@@ -6,7 +6,7 @@
 - good evening
 - hey there
 
-## intent: order_food
+## intent:order_food
 - I want to place an order.
 - Hey bot help me to place an order.
 - Hey bot can you help me to place order.
@@ -17,6 +17,7 @@
 - Place an order.
 - Place an order for me.
 - Help me to place order.
+
 
 ## intent: inform
 - [Noodles](dish_name)
@@ -64,8 +65,15 @@
 - [bkvnoija@gmail.com](mailid)
 - [vrbgftmm@icloud.com](mailid)
 - [brpdmaev@gmx.com](mailid)
-
-
+- [yes](continue)
+- [yes](continue) sure
+- [Yes](continue) sure
+- [Yes](continue)
+- [YES](continue)
+- [YES](continue) sure
+- [NO](continue)
+- [no](continue)
+- [No](continue)
 ## intent:goodbye
 - bye
 - goodbye

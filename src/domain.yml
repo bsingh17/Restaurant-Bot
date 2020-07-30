@@ -1,13 +1,12 @@
 intents:
   - greet
   - goodbye
-  - affirm
-  - deny
   - order_food
   - inform
   - bot_challenge
 
 forms:
+  - info_form
   - order_form
 
 entities:
@@ -15,7 +14,7 @@ entities:
   - mailid
   - phone_number
   - dish_name
-  - continue
+  - proceed
   
 responses:
   utter_greet:
@@ -28,13 +27,13 @@ responses:
     - text: Please enter your phone number.
   utter_ask_dish_name:
     - text: What would you like to have?  
-  utter_ask_continue:
+  utter_ask_proceed:
     - text: Would you like to add more to your cart?
       buttons:
         - title: "Yes"
-          payload: '/inform{"continue":"Yes"}'
+          payload: '/inform{"proceed":"Yes"}'
         - title: "No"
-          payload: '/inform{"continue":"No"}'
+          payload: '/inform{"proceed":"No"}'
   utter_goodbye:
     - text: "Bye"
 
@@ -52,7 +51,7 @@ slots:
         type: unfeaturized
     dish_name:
         type: unfeaturized
-    continue:
+    proceed:
         type: unfeaturized
 session_config:
   session_expiration_time: 60
